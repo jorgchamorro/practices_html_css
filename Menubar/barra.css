@@ -1,0 +1,133 @@
+/*
+Hoja de estilos CSS para documento de prueba para practicas de menú superior, con efecto dropdown menu y otros. 
+Jorge Chamorro - jorgech.py@gmail.com
+Jul - 07 - 2022
+*/
+
+body {
+    background-color: dimgray;
+}
+
+p {
+    font-family: Verdana;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.5em;
+    color: white;
+    text-align: left;
+    text-indent: 15px;
+    line-height: 1.5;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+    display: block;
+}
+
+.texto_normal{
+    text-align: left;
+}
+
+.texto_cabecera {
+    padding: 60px 0px 0px 0px;
+    font-family: Verdana;
+    font-weight: 100;
+    font-style:normal;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-indent: 15px;
+    line-height: 1.5;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: blueviolet;
+}
+
+.active{
+    background-color: #4caf50;
+}
+
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+.dropdown-btn:hover {
+    background-color: blueviolet;
+}
+
+.dropdown-content a:hover {
+    background-color: darkviolet;
+}
+
+.dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: blueviolet;
+    min-width: 150px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.tabla1 {
+    width: 60%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 16px;
+}
+
+.tabla1 tr th {
+    background-color: blueviolet;
+    color: white;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.tabla1 tr td {
+    padding: 8px;
+}
+
+.tabla1 tr:nth-child(even){
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+
+img{
+    opacity: 1;
+
+}
+
+img:hover{
+    opacity: 0.8;
+}
